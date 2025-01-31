@@ -1,0 +1,120 @@
+/* Body Styling */
+body {
+    background-color: #F7F7F7; /* Neutral light background */
+    font-family: sans-serif;
+    color: #000000; /* Standard black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #CFB53B; /* Old Gold text color */
+    background-color: #002855; /* Deep Blue background for emphasis */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; /* Slight rounding for a modern touch */
+}
+
+/* Paragraphs */
+p {
+    color: #333333; /* Medium gray text for better readability */
+    line-height: 1.6; /* Improved readability with spacing */
+}
+
+/* List Items */
+li {
+    color: #002855; /* Blue for text to align with headings */
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Banner and Navigation Links */
+.banner {
+    text-align: center;
+    background-color: #002855; /* Deep Blue banner */
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.links button {
+    background-color: #CFB53B; /* Old Gold for buttons */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links button:hover {
+    background-color: #F2E085; /* Light Gold on hover */
+    color: #000000;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000; /* Black text for links on Old Gold buttons */
+    font-family: sans-serif;
+}
+
+.links a:hover {
+    color: #002855; /* Blue text on hover */
+}
+
+/* Buttons Styling */
+button {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* UL and Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Other Styling */
+h2, h3 {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #002855; /* Deep Blue footer */
+    color: #CFB53B; /* Old Gold text */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.gallery{
+    border: 1px solid;
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 1px solid #CFB53B;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}

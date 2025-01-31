@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Projects</title>
+        <meta name="description" content="My first webpage">
+        <meta name="author" content="Chad Wangolo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+    <body>
+        <h2 align="center">Java "Eclipse" projects</h2>
+
+        <div class="banner">
+            <div class="links">
+                <button><a href ="index.html">Home</a></button>
+                <button><a href = "da.html">Data Analytics Projects</a></button>
+                <button><a href = "java.html">Java "Eclipse" Projects</a></button>
+                <button><a href = "full.html">Full Stack Development Projects</a></button>
+                <button><a href = "abt.html">About Me</a></button>
+            </div>
+        </div>
+
+        <h3>File and Data Structures Projects</h3>
+        <ul>
+            <li>Module 1: SymbolTable</li>
+            <p>During this module I successfully implemented a Symbol Table class in Java, meeting all the requirements to pass the module test. This included using an appropriate data structure design for handling 52 Latin alphabet keys, developing core methods like put, get, remove, and clear, and defining properties such as isEmpty, isFull, loadFactor, and hashCode. The implementation also included advanced features like equals and iterator methods, and producing debug-friendly outputs via toString. Additionally, the student created multiple Symbol Table instances with diverse properties and meaningful content, demonstrating proper programming style, clear formatting, and adherence to Java conventions.</p>
+            <!--Add the module 1 rubric-->
+
+            <li>Module 2: HashTable</li>
+            <p>During this module I successfully developed a Hash Table class in Java, fulfilling all expectations in the given rubric below. They utilized hashing with open addressing and implemented a flexible design using alternating sign quadratic probing or double hashing. Core methods such as put, get, remove, and clear were developed, along with a rehash function to maintain efficiency under load. Additional features included defining a hashFunction, supporting rehashing, and implementing properties like degree, size, and capacity. They also added methods for equality checks, iteration, and comprehensive string representations. Finally, the student demonstrated their implementation by creating multiple Hash Table instances with diverse properties, showcasing clear programming style and adherence to conventions.</p>
+            <!--Add the module 2 rubric-->
+
+            <li>Module 3: CSV Table</li>
+            <p>During this module I successfully developed a CSV Table class in Java, meeting all expectations in the rubric below in order to pass the module test. They utilized the Java NIO library for managing plain text CSV files with linear search and implemented a self-organizing heuristic, such as move-to-front, transpose, or frequency-based reordering. Core functionalities included constructing tables, defining properties like degree, size, and columns, and implementing methods for encoding and decoding CSV rows. Advanced features such as put, get, and remove methods with heuristic integration, along with iterator and equality functionalities, were also implemented. The student demonstrated their understanding by creating multiple CSV Table instances using a static factory method, showcasing a variety of properties and adhering to good programming practices with clear formatting, conventions, and comments.</p>
+            <!--Add the module 3 rubric-->
+
+            <li>Module 4: JSON/ XML Table</li>
+            <p>During this module I successfully developed a JSON or XML Table class in Java, meeting all specified requirements to pass the module test. Using either the Jackson or dom4j API, they implemented functionality for hierarchical data storage in JSON or XML format, ensuring efficient file creation, access, and mutation via the Java NIO library. Core methods like put, get, remove, and clear were implemented, along with a flush method to persist changes immediately in a pretty-printed format. The student handled metadata and data efficiently, leveraging native structures and primitives of the chosen file format. They also implemented properties such as degree, size, and columns, and included advanced features like iterators and a filter method for creating data partitions. Multiple table instances were created and demonstrated with diverse properties and filter criteria, highlighting proper programming style, clear formatting, and meaningful content.</p>
+            <!--Add the module 4 rubric-->
+
+            <li>Module 5: Binary Table</li>
+            <p>During this successfully developed a Binary Table class in Java, fulfilling all requirements for managing binary data storage using the Java library. They implemented hierarchical storage with separate directories for metadata and data, utilizing techniques such as SHA-1 digests for organizing file paths and efficient binary encoding for minimal byte usage. Core functionalities included constructors for initializing and reopening tables, and methods like put, get, and remove, with mechanisms for maintaining file structure integrity. Properties such as degree, size, and columns were defined, and an iterator method was implemented for traversing stored data. Multiple Binary Table instances were created and tested with diverse properties, demonstrating proper programming style, meaningful content, and adherence to conventions.</p>
+            <!--Add the module 5 rubric-->
+        </ul>
+
+        <h3>Data Structures Projects</h3>
+        <ul>
+            <li>Search Algorithms</li>
+            <p>This Java class, SearchAlgorithms, implements two common search algorithms—linear search and binary search—to find a target element (key) in an integer array (arr). The class tracks the number of comparisons made during the search process for performance analysis. In the linearSearch method, each element in the array is sequentially compared to the key, incrementing a comparisons counter with each check. If the key is found, the method returns the comparison count; otherwise, it returns the total comparisons made after traversing the array. In the binarySearch method, the search operates on a sorted array, repeatedly dividing the search range in half. Low (left) and high (right) pointers narrow the range based on whether the midpoint's value matches, exceeds, or is less than the key. The method tracks and returns the number of comparisons performed until the key is found or the range is exhausted.</p>
+
+            <li>Max Heap</li>
+            <p>The `MaxHeap` class is a generic implementation of a max-heap data structure, designed to maintain the maximum value at the root while preserving the heap property, where each parent node is greater than or equal to its children. The heap is stored as an array that dynamically resizes when capacity is exceeded. Elements are added using an `insert` method, which places the new value at the end of the array and reestablishes the heap property by moving the element upward through the tree. The `remove` method retrieves and removes the maximum value from the root, replacing it with the last element in the array and restoring the heap property by moving this element downward. These adjustments are achieved through the `prelocateU` (heapify up) and `prelocateD` (heapify down) methods, which ensure that the tree structure remains valid after modifications. The class also includes a method to return the current size of the heap. Although the implementation is generic, it explicitly casts elements to integers during insertion, which could lead to runtime errors if non-integer types are used, making it less robust for generic type handling.</p>
+
+            <li>RPN Calculator</li>
+            <p>This Java program implements a Reverse Polish Notation (RPN) calculator using a stack-based approach. The `evaluateRPN` method takes an array of tokens, where each token represents either an operand (a number) or an operator (`+`, `-`, `*`, `/`). It processes each token sequentially: if the token is a number, it is parsed into a `double` and pushed onto the stack; if it is an operator, the top two numbers are popped from the stack, the operator is applied to them, and the result is pushed back onto the stack. The program includes helper methods to identify whether a token is a number (`isNumber`) or a valid operator (`isOperator`), and a method (`applyOperator`) to execute the arithmetic operations while handling edge cases, such as division by zero. After processing all tokens, the stack should contain exactly one element—the result of the computation—which is returned. If the stack's size is incorrect at any point or invalid tokens are encountered, the program throws an exception. The `main` method demonstrates the calculator with an example expression, printing the result.</p>
+            <!--Add more data structures projects here-->
+        </ul>
+    </body>
+</html>
